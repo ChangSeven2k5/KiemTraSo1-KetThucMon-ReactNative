@@ -6,93 +6,58 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
+import HelloWord from '@/components/buoi_1/hello-word';
+import HelloName from '@/components/buoi_1/alert-hello';
+import HelloState from '@/components/buoi_1/hello-state';
+import PTbacNhat from '@/components/buoi_1/pt-bac-nhat';
+import Parent from '@/components/buoi_3/Parent';
+import Calculation from '@/components/buoi_4/Calculation';
+import BMIApp from '@/components/buoi_5/calculator-BMI';
+import Flexbox from '../../components/buoi_7/Flexbox';
+import GridLayout from '@/components/buoi_7/GridLayout';
+import UIHomeWebsite from '@/components/buoi_7/UI-Home-Website';
+import CakeUI from '@/components/buoi_8/CakeUI';
+import LayoutUI from '@/components/buoi_8/LayoutUI';
+import FlatListUI from '@/components/buoi_8/FlatListUI';
+import ArrayPractice from '@/components/buoi_9/ArrayPractice';
+import DanhBa from '@/components/buoi_10/DanhBa';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
-
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      // <HelloWord></HelloWord>
+      // <HelloName name="Hương" age= {20}></HelloName>
+      // <HelloState></HelloState>
+      // <PTbacNhat></PTbacNhat>
+      // <Parent></Parent>
+      // <Calculation></Calculation>
+      // <BMIApp></BMIApp>
+      // <Flexbox></Flexbox>
+      // <GridLayout></GridLayout>
+      // <UIHomeWebsite></UIHomeWebsite>
+      // <CakeUI></CakeUI>
+      // <LayoutUI></LayoutUI>
+      // <FlatListUI></FlatListUI>
+      // <ArrayPractice></ArrayPractice>
+      <DanhBa></DanhBa>
+      
   );
 }
 
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
+// const styles = StyleSheet.create({
+//   titleContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     gap: 8,
+//   },
+//   stepContainer: {
+//     gap: 8,
+//     marginBottom: 8,
+//   },
+//   reactLogo: {
+//     height: 178,
+//     width: 290,
+//     bottom: 0,
+//     left: 0,
+//     position: 'absolute',
+//   },
+// });
